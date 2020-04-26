@@ -1,0 +1,46 @@
+{
+  "name": "@kuroski/v-eager",
+  "version": "1.0.1",
+  "description": "A directive that emits input events despite the default keyboard on Android, GBoard, does composing by default",
+  "author": "Daniel Kuroski <daniel.kuroski@gmail.com> (https://github.com/kuroski)",
+  "main": "dist/v-eager.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/kuroski/v-eager.git"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name VEager src/index.js && cp dist/VEager.umd.min.js dist/v-eager.js",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-unit-jest": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^1.19.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "files": [
+    "dist/",
+    "src/*.js",
+    "src/*.vue"
+  ],
+  "keywords": [
+    "vue"
+  ],
+  "license": "MIT"
+}
